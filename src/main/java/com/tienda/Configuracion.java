@@ -13,7 +13,6 @@ import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
 @Configuration
-
 public class Configuracion implements WebMvcConfigurer { 
 
     /* Los siguientes métodos son para hacer uso de Internacionalización */
