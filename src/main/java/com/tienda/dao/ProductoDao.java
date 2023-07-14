@@ -18,3 +18,4 @@ public List<Producto> consultaJPQL(double precioInf, double precioSup);
 @Query(nativeQuery=true,value="SELECT * FROM producto a WHERE a.precio BETWEEN :precioInf AND :precioSup ORDER BY a.descripcion ASC")
 public List<Producto> consultaSQL(double precioInf, double precioSup);
 }
+ 

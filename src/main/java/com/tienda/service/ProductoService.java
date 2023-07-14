@@ -27,4 +27,4 @@ public interface ProductoService {
     // se enuncia un método para recuperar los productos con una consulta SQL
     public List<Producto>consultaSQL(double precioInf, double precioSup); 
     
-}
+} 
