@@ -40,5 +40,20 @@ public class ProductoServiceImpl implements ProductoService {
     public void delete(Producto producto) {
         productoDao.delete(producto);
     }
-   
+    // se implementa un método para recuperar los productos con una consulta ampliada
+    @Override
+    public List<Producto>buscaProductosPorPrecioEntre(double precioInf, double precioSup){
+        return productoDao.findByPrecioBetweenOrderByDescripcion(precioInf, precioSup);
+    }
+   @Override
+    public List<Producto>consultaJPQL(double precioInf, double precioSup){
+        return productoDao.consultaJPQL(precioInf, precioSup);
+    }
+    
+    @Override
+    public List<Producto>consultaSQL(double precioInf, double precioSup){
+        return productoDao.consultaSQL(precioInf, precioSup);
+    }
+    
+    
 }
