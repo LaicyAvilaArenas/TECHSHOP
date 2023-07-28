@@ -29,6 +29,14 @@ public class Usuario implements Serializable {
 @OneToMany
 @JoinColumn(name="id_usuario")
 List<Rol> roles;
+
+    public void setRutaImagen(String cargaImagen) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public Long getIdUsuario() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
    
   
   
